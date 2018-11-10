@@ -1,8 +1,8 @@
 FROM alpine:latest
 
-#ENV CONFIG_JSON=none CERT_PEM=none KEY_PEM=none VER=3.35
+ENV CONFIG_JSON=none CERT_PEM=none KEY_PEM=none VER=3.36
 
-#RUN apk add --no-cache --virtual .build-deps ca-certificates curl \
+RUN apk add --no-cache --virtual .build-deps ca-certificates curl \
 # && mkdir -m 777 /v2raybin \ 
 # && cd /v2raybin \
 # && curl -L -H "Cache-Con#trol: no-cache" -o v2ray.zip https://github.com/v2ray/v2ray-core/releases/download/v$VER/v2ray-linux-64.zip \
